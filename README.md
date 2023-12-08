@@ -18,9 +18,9 @@ To convert .emf image types to .png, linux env is necessary with inkscape instal
 Convert docx to html
 
 ```python
-from docx2html.convert import convert_docx_to_html
+from docx2html.convert import docx_to_html
 
-html = convert_docx_to_html("your_docx_filepath_here", is_convert)
+html = docx_to_html("your_docx_filepath_here", is_convert)
 ```
 
 - your_docx_filepath_here: Your docx file path

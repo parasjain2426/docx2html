@@ -4,7 +4,9 @@ import re
 import subprocess
 import os
 import base64
-from PIL import Image
+
+# from PIL import Image
+
 # import io
 import mammoth
 
@@ -90,9 +92,7 @@ def img_type_conversion(html, filename, is_convert=False):
                 img_file.write(img_dec_data)
             convert_emf_to_png(emf_path, png_path)
             if os.path.isfile(f"img_conversions/Figure_{img_id}.png"):
-                with open(
-                    f"img_conversions/Figure_{img_id}.png", "rb"
-                ) as png_file:
+                with open(f"img_conversions/Figure_{img_id}.png", "rb") as png_file:
                     png_img = base64.b64encode(png_file.read())
 
                 if len(png_img) > 0:
@@ -103,7 +103,7 @@ def img_type_conversion(html, filename, is_convert=False):
 
 
 # Method to convert docx to html
-def convert_docx_to_html(filename, is_convert=False):
+def docx_to_html(filename, is_convert=False):
     try:
         dir_path = "img_conversions"
         if not os.path.isdir(dir_path):
