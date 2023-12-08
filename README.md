@@ -1,4 +1,4 @@
-# docx_to_html
+# docx-2-html
 
 A package to convert docx files to html with added features on top of mammoth library.
 

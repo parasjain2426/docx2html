@@ -5,7 +5,7 @@ DESCRIPTION = "Convert docx files to html"
 
 # Setting up
 setup(
-    name="docx_to_html",
+    name="docx-2-html",
     version=VERSION,
     author="Paras Jain",
     author_email="<paras.2426@gmail.com>",
@@ -16,6 +16,7 @@ setup(
         "python",
         "docx",
         "html",
+        "docx-2-html",
         "docx2html",
         "docx-to-html",
         "convert",
