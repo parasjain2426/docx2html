@@ -1,4 +1,4 @@
-# docx-2-html
+# html4docx
 
 A package to convert docx files to html with added features on top of mammoth library.
 
@@ -18,7 +18,7 @@ To convert .emf image types to .png, linux env is necessary with inkscape instal
 Convert docx to html
 
 ```python
-from docx2html.convert import docx_to_html
+from html4docx.convert import docx_to_html
 
 html = docx_to_html("your_docx_filepath_here", is_convert)
 ```
