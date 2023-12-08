@@ -10,7 +10,8 @@ Developed by Paras Jain (c) 2023
 - Images like .emf are converted to .png type.
 - Image dimensions present in the file are converted for html with preset same width and height.
 
-* Note: To convert .emf image types to .png, linux env is necessary with inkscape installed.
+**Note**
+To convert .emf image types to .png, linux env is necessary with inkscape installed.
 
 ## Examples of How To Use
 
@@ -22,5 +23,5 @@ from docx2html.convert import convert_docx_to_html
 html = convert_docx_to_html("your_docx_filepath_here", is_convert)
 ```
 
-your_docx_filepath_here: Your docx file path
-is_convert: is a boolean to convert .emf imgs to .png
+- your_docx_filepath_here: Your docx file path
+- is_convert: is a boolean to convert .emf imgs to .png
